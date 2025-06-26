@@ -1,3 +1,6 @@
----
-Repository: https://salsa.debian.org/live-team/calamares-settings-debian.git
-Repository-Browse: https://salsa.debian.org/live-team/calamares-settings-debian
+Documentation: https://github.com/KoruX-Gnu-Linux/calamares-settings-korux
+Repository: https://github.com/KoruX-Gnu-Linux/calamares-settings-korux.git
+Repository-Browse: https://github.com/KoruX-Gnu-Linux/calamares-settings-korux
+Bug-Submit: https://github.com/KoruX-Gnu-Linux/calamares-settings-korux/issues/new
+Bug-Database: https://github.com/KoruX-Gnu-Linux/calamares-settings-korux/issues
+Changelog: https://github.com/KoruX-Gnu-Linux/calamares-settings-korux/blob/korux/latest/CHANGELOG

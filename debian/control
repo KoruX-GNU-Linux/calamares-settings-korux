@@ -1,15 +1,15 @@
-Source: calamares-settings-debian
+Source: calamares-settings-korux
 Section: utils
 Priority: optional
-Maintainer: Jonathan Carter <jcc@debian.org>
+Maintainer: Kirill Rekhov <krekhov.dev@gmail.com>
 Build-Depends: debhelper-compat (= 13), libglib2.0-bin
-Standards-Version: 4.6.0
+Standards-Version: 4.7.2
 Rules-Requires-Root: no
-Homepage: https://salsa.debian.org/live-team/calamares-settings-debian
-Vcs-Git: https://salsa.debian.org/live-team/calamares-settings-debian-packaging.git
-Vcs-Browser: https://salsa.debian.org/live-team/calamares-settings-debian-packaging
+Homepage: https://github.com/KoruX-Gnu-Linux/calamares-settings-korux
+Vcs-Git: https://github.com/KoruX-Gnu-Linux/calamares-settings-korux.git
+Vcs-Browser: https://github.com/KoruX-Gnu-Linux/calamares-settings-korux
 
-Package: calamares-settings-debian
+Package: calamares-settings-korux
 Architecture: all
 Depends: calamares,
          cryptsetup,
@@ -20,10 +20,12 @@ Depends: calamares,
          qml-module-qtquick2,
          ${misc:Depends}
 Provides: calamares-settings
-Description: Debian theme and settings for the Calamares Installer
+Replaces: calamares-settings-debian
+Conflicts: calamares-settings-debian
+Description: KoruX theme and settings for the Calamares Installer
  Calamares is a generic installer framework for Linux distributions.
  By default, it contains a set of boilerplate wording and images. This
- package provides the latest Debian artwork as well as scripts that
+ package provides the latest KoruX artwork as well as scripts that
  supports EFI installations.
  .
  It also serves as an example for how derivatives can create their own

@@ -2,6 +2,7 @@
  *
  *   Copyright 2015, Teo Mrnjavac <teo@kde.org>
  *   Copyright 2018-2019, Jonathan Carter <jcc@debian.org>
+ *   Copyright 2025, Kirill Rekhov <krekhov.dev@gmail.com>
  *
  *   Calamares is free software: you can redistribute it and/or modify
  *   it under the terms of the GNU General Public License as published by
@@ -40,7 +41,7 @@ Presentation
         Text {
             anchors.horizontalCenter: background1.horizontalCenter
             anchors.top: background1.bottom
-            text: qsTr("Welcome to Debian GNU/Linux.<br/>"+
+            text: qsTr("Welcome to KoruX GNU/Linux.<br/>"+
                   "The rest of the installation is automated and should complete in a few minutes.")
             wrapMode: Text.WordWrap
             width: 600

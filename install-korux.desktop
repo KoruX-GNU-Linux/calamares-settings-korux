@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=Install KoruX
+GenericName=Calamares Installer
+Exec=install-korux
+Comment=Calamares — Installer for KoruX Live
+Keywords=calamares;system;install;korux;installer
+Icon=install-korux
+Terminal=false
+Categories=Qt;System;
+StartupWMClass=calamares
+StartupNotify=True

@@ -1,5 +1,5 @@
 ---
-componentName:   debian
+componentName: korux
 welcomeStyleCalamares: true
 welcomeExpandingLogo: true
 windowExpanding: normal
@@ -7,13 +7,11 @@ windowSize: 800px,520px
 windowPlacement: center
 
 strings:
-    productName:         Debian GNU/Linux
-    shortProductName:    Debian
-    version:             12 (bookworm)
-    shortVersion:        12
-    versionedName:       Debian 12 (bookworm)
-    shortVersionedName:  Debian 12
-    bootloaderEntryName: Debian
+    productName:         KoruX GNU/Linux
+    shortProductName:    KoruX
+    version:             0.01
+    versionedName:       KoruX 0.01
+    bootloaderEntryName: KoruX
     productUrl:          https://debian.org
     supportUrl:          https://www.debian.org/support
     knownIssuesUrl:      https://bugs.debian.org
@@ -21,8 +19,8 @@ strings:
     donateUrl:           https://www.debian.org
 
 images:
-    productLogo:         "debian-logo.png"
-    productIcon:         "debian-logo.png"
+    productLogo:         "korux-logo.png"
+    productIcon:         "korux-logo.png"
     productWelcome:      "welcome.png"
     # productWallpaper:  "wallpaper.png"
 

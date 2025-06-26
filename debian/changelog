@@ -1,3 +1,13 @@
+calamares-settings-korux (12.0.9-1+kor) UNRELEASED; urgency=medium
+
+  * Add my own KoruX OS images/logos
+  * Rename all debian things to korux
+  * Remove grubcfg step and os-prober re-enable
+  * scripts/sources-final: update final sources.list
+  * d/control: add Replaces/Conflicts fields to calamares-settings-debian
+
+ -- Kirill Rekhov <krekhov.dev@gmail.com>  Thu, 26 Jun 2025 23:34:25 +0300
+
 calamares-settings-debian (12.0.9-1+deb12u2) bookworm; urgency=medium
 
   * Fix missing calamares launcher on KDE desktops

@@ -1,5 +1,5 @@
 #!/bin/sh
-# Creates an "Install Debian" icon on the live session tested with:
+# Creates an "Install KoruX" icon on the live session tested with:
 # Xfce, LXDE, LXqt, Gnome, KDE, Mate, Cinnamon
 
 # We query xdg-user-dir because the Desktop directory has different
@@ -10,18 +10,28 @@ DESKTOP=$(xdg-user-dir DESKTOP)
 # creation script.
 mkdir -p $DESKTOP
 
-# Among the Debian desktop environments, LXDE is the only one
+# Among the KoruX desktop environments, LXDE is the only one
 # that behaves completely different.
 if [ -f /usr/bin/lxsession ]; then
-    echo "[Desktop Entry]" > $DESKTOP/install-debian.desktop
-    echo "Type=Link" >> $DESKTOP/install-debian.desktop
-    echo "Name=Install Debian" >> $DESKTOP/install-debian.desktop
-    echo "Icon=install-debian" >> $DESKTOP/install-debian.desktop
-    echo "URL=/usr/share/applications/install-debian.desktop" \
-          >> $DESKTOP/install-debian.desktop
+    echo "[Desktop Entry]" > $DESKTOP/install-korux.desktop
+    echo "Type=Link" >> $DESKTOP/install-korux.desktop
+    echo "Name=Install KoruX" >> $DESKTOP/install-korux.desktop
+    echo "Icon=install-korux" >> $DESKTOP/install-korux.desktop
+    echo "URL=/usr/share/applications/install-korux.desktop" \
+          >> $DESKTOP/install-korux.desktop
 else
-    cp /usr/share/applications/install-debian.desktop $DESKTOP
+    cp /usr/share/applications/install-korux.desktop $DESKTOP
     # Xfce needs this executable otherwise it complains, everything
     # else doesn't seem to care either way.
-    chmod +x $DESKTOP/install-debian.desktop
+    chmod +x $DESKTOP/install-korux.desktop
+fi
+
+if [ "$XDG_CURRENT_DESKTOP" = "XFCE" ]; then
+    #Set desktop launcher as trusted under gnome/xfce (See: #1037299)
+    gio set --type=string ~/Desktop/install-korux.desktop \
+        metadata::trusted true
+    gio set --type=string ~/Desktop/install-korux.desktop \
+        metadata::xfce-exe-checksum \
+        "$(sha256sum ~/Desktop/install-korux.desktop | cut -f1 -d' ')"
+    touch ~/Desktop/install-korux.desktop
 fi
