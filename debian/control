@@ -5,9 +5,9 @@ Maintainer: Kirill Rekhov <krekhov.dev@gmail.com>
 Build-Depends: debhelper-compat (= 13), libglib2.0-bin
 Standards-Version: 4.7.2
 Rules-Requires-Root: no
-Homepage: https://github.com/KoruX-Gnu-Linux/calamares-settings-korux
-Vcs-Git: https://github.com/KoruX-Gnu-Linux/calamares-settings-korux.git
-Vcs-Browser: https://github.com/KoruX-Gnu-Linux/calamares-settings-korux
+Homepage: https://github.com/KoruX-GNU-Linux/calamares-settings-korux
+Vcs-Git: https://github.com/KoruX-GNU-Linux/calamares-settings-korux.git
+Vcs-Browser: https://github.com/KoruX-GNU-Linux/calamares-settings-korux
 
 Package: calamares-settings-korux
 Architecture: all

@@ -1,2 +1,2 @@
 version=4
-https://github.com/KoruX-Gnu-Linux/calamares-settings-korux/tags .*/v?(\d\S*)\.tar\.gz
+https://github.com/KoruX-GNU-Linux/calamares-settings-korux/tags .*/v?(\d\S*)\.tar\.gz
