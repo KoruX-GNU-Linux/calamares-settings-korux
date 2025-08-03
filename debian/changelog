@@ -1,3 +1,10 @@
+calamares-settings-korux (12.0.9-2+kor) UNRELEASED; urgency=medium
+
+  * Just rename urls to corrects
+  * d/gbp.conf: update debian-branch field
+
+ -- Kirill Rekhov <krekhov.dev@gmail.com>  Sun, 03 Aug 2025 21:16:39 +0300
+
 calamares-settings-korux (12.0.9-1+kor) UNRELEASED; urgency=medium
 
   * Add my own KoruX OS images/logos
